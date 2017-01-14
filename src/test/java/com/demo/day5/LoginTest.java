@@ -15,6 +15,7 @@ import org.testng.annotations.Test;
  * Created by Administrator on 2016/12/29.
  */
 public class LoginTest {
+/*
 
 
     WebDriver driver;
@@ -35,9 +36,11 @@ public class LoginTest {
 
     LoginTest loginTest = new LoginTest();
 
-    /**
+    */
+/**
      * 成功登录的case
-     */
+     *//*
+
     @Test
     public void loginSucess() {
         driver.get("http://mail.163.com");
@@ -60,26 +63,32 @@ public class LoginTest {
 
 
 
-    /**
+    */
+/**
      * 密码错误登录的case
-     */
+     *//*
+
     @Test
     public void loginFail() {
         driver.get("http://mail.163.com");
         LoginDemo.loign(driver,"meyoungtester","12312312");
 
-        String msg = driver.findElement(By.xpath(".//*[@id='nerror']/div[2]")).getText();
+        String msg = driver.findElement(By.xpath("./*/
+/*[@id='nerror']/div[2]")).getText();
         Assert.assertEquals(msg, "帐号或密码错误");
     }
 
-    /**
+    */
+/**
      * 账号错误登录的case
-     */
+     *//*
+
     @Test
     public void loginFail2() {
         driver.get("http://mail.163.com");
         LoginDemo.loign(driver,"123123123","meyoung123");
-        String msg = driver.findElement(By.xpath(".//*[@id='nerror']/div[2]")).getText();
+        String msg = driver.findElement(By.xpath("./*/
+/*[@id='nerror']/div[2]")).getText();
         Assert.assertEquals(msg, "账号不存在");
     }
 
@@ -89,5 +98,6 @@ public class LoginTest {
 
 
 
+*/
 
 }
