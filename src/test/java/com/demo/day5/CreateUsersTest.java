@@ -8,17 +8,17 @@ import org.testng.annotations.Test;
  * Created by Administrator on 2016/12/29.
  */
 public class CreateUsersTest extends BaseCase {
-
+/*
     long time = System.currentTimeMillis();
 
-/*    @Test
+*//*    @Test
     public void test1(){
         System.out.println(time);
-    }*/
+    }*//*
 
-    /**
+    *//**
      * 手机验证码错误的case
-     */
+     *//*
     @Test
     public void createEmail() throws InterruptedException {
 //        打开测试地址
@@ -37,7 +37,7 @@ public class CreateUsersTest extends BaseCase {
             driver.switchTo().window(handles);
         }
 //        填写注册表单
-        driver.findElement(By.xpath(".//*[@id='tabsUl']/li[1]/a")).click();
+        driver.findElement(By.xpath("./*//*[@id='tabsUl']/li[1]/a")).click();
         driver.findElement(By.id("nameIpt")).sendKeys("E" + String.valueOf(time));
         driver.findElement(By.id("mainPwdIpt")).sendKeys("password");
         driver.findElement(By.id("mainCfmPwdIpt")).sendKeys("password");
@@ -49,8 +49,8 @@ public class CreateUsersTest extends BaseCase {
 
         Thread.sleep(2000);
 //        校验 是否有提示手机验证码错误
-        String err1 = driver.findElement(By.xpath(".//*[@id='m_mainAcode']/span")).getText().trim();
+        String err1 = driver.findElement(By.xpath("./*//*[@id='m_mainAcode']/span")).getText().trim();
         Assert.assertEquals(err1, "手机验证码不正确，请重新填写");
 
-    }
+    }*/
 }
